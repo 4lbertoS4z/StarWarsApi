@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		601F38992B0265F10053C1B5 /* VehiclesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601F38982B0265F10053C1B5 /* VehiclesViewModel.swift */; };
 		601F389B2B0266750053C1B5 /* ShipsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601F389A2B0266750053C1B5 /* ShipsViewModel.swift */; };
+		601F389D2B026D920053C1B5 /* VehiclesDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601F389C2B026D920053C1B5 /* VehiclesDetailView.swift */; };
+		601F38A02B026DC20053C1B5 /* StarshipDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601F389F2B026DC20053C1B5 /* StarshipDetailView.swift */; };
 		606CD2322AFD38AC008E5F88 /* StarWarsAPIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606CD2312AFD38AC008E5F88 /* StarWarsAPIApp.swift */; };
 		606CD2342AFD38AC008E5F88 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606CD2332AFD38AC008E5F88 /* ContentView.swift */; };
 		606CD2362AFD38AC008E5F88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 606CD2352AFD38AC008E5F88 /* Assets.xcassets */; };
@@ -34,6 +36,8 @@
 /* Begin PBXFileReference section */
 		601F38982B0265F10053C1B5 /* VehiclesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesViewModel.swift; sourceTree = "<group>"; };
 		601F389A2B0266750053C1B5 /* ShipsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipsViewModel.swift; sourceTree = "<group>"; };
+		601F389C2B026D920053C1B5 /* VehiclesDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesDetailView.swift; sourceTree = "<group>"; };
+		601F389F2B026DC20053C1B5 /* StarshipDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipDetailView.swift; sourceTree = "<group>"; };
 		606CD22E2AFD38AC008E5F88 /* StarWarsAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		606CD2312AFD38AC008E5F88 /* StarWarsAPIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsAPIApp.swift; sourceTree = "<group>"; };
 		606CD2332AFD38AC008E5F88 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -68,6 +72,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		601F389E2B026DA70053C1B5 /* StarhipDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				601F389F2B026DC20053C1B5 /* StarshipDetailView.swift */,
+			);
+			path = StarhipDetailView;
+			sourceTree = "<group>";
+		};
 		606CD2252AFD38AC008E5F88 = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +190,7 @@
 		606CD25A2AFD5063008E5F88 /* Vehicles */ = {
 			isa = PBXGroup;
 			children = (
+				601F389E2B026DA70053C1B5 /* StarhipDetailView */,
 				606CD2642AFD5387008E5F88 /* VehiclesDetailView */,
 				606CD2632AFD5372008E5F88 /* VehiclesView */,
 			);
@@ -220,6 +233,7 @@
 		606CD2642AFD5387008E5F88 /* VehiclesDetailView */ = {
 			isa = PBXGroup;
 			children = (
+				601F389C2B026D920053C1B5 /* VehiclesDetailView.swift */,
 			);
 			path = VehiclesDetailView;
 			sourceTree = "<group>";
@@ -334,6 +348,7 @@
 				606CD2722AFD5DB6008E5F88 /* PlanetViewModel.swift in Sources */,
 				606CD24A2AFD3C32008E5F88 /* VehiclesResponse.swift in Sources */,
 				601F389B2B0266750053C1B5 /* ShipsViewModel.swift in Sources */,
+				601F38A02B026DC20053C1B5 /* StarshipDetailView.swift in Sources */,
 				606CD2442AFD394A008E5F88 /* ApiConstants.swift in Sources */,
 				606CD26E2AFD5C51008E5F88 /* PlanetsResponse.swift in Sources */,
 				606CD2582AFD44CC008E5F88 /* FilmDetailView.swift in Sources */,
@@ -341,6 +356,7 @@
 				606CD25C2AFD5191008E5F88 /* PeopleListView.swift in Sources */,
 				601F38992B0265F10053C1B5 /* VehiclesViewModel.swift in Sources */,
 				606CD26A2AFD53F1008E5F88 /* PeopleDetailView.swift in Sources */,
+				601F389D2B026D920053C1B5 /* VehiclesDetailView.swift in Sources */,
 				606CD2562AFD42A1008E5F88 /* FilmsListView.swift in Sources */,
 				606CD2522AFD4280008E5F88 /* FilmsViewModel.swift in Sources */,
 				606CD2462AFD3ABD008E5F88 /* PeopleResponse.swift in Sources */,

@@ -16,7 +16,9 @@ struct StarshipResponse: Codable {
 }
 
 // MARK: - Result
-struct StarshipResult: Codable {
+struct StarshipResult: Codable, Identifiable {
+    // Esta es la propiedad que cumplirá con el protocolo Identifiable
+    var id: String { url }
     let name, model, manufacturer, costInCredits: String
     let length, maxAtmospheringSpeed, crew, passengers: String
     let cargoCapacity, consumables, hyperdriveRating, mglt: String

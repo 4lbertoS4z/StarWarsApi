@@ -27,19 +27,16 @@ struct FilmDetailView: View {
                 Text("Opening:")
                     .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                 Text(film.openingCrawl)
-                Text("Characters:")
-                    .font(.title)
-                ForEach(film.characters, id: \.self) { character in
-                    Text(character)
-                }
+               
                 
                 Text("Planets:")
-                    .font(.title)
-                ForEach(film.planets, id: \.self) { planet in
-                    Text(planet)
+                                    .font(.title)
+                                ForEach(film.planets, id: \.self) { planetUrl in
+                                    NavigationLink(destination: PlanetDetailView(planetUrl: planetUrl)) {
+                                        Text(planetUrl)
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
-            }
-        }
-    }
-}
-

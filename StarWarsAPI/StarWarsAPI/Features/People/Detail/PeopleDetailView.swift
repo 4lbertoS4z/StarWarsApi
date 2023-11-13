@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct PeopleDetailView: View {
+    @ObservedObject var peopleViewModel: PeopleViewModel // Añade esto
     let person: PeopleResult
     
     var body: some View {
@@ -28,7 +29,10 @@ struct PeopleDetailView: View {
         }
         .navigationTitle(person.name)
         .navigationBarTitleDisplayMode(.inline)
+        .navigationBarItems(trailing: Button(action: {
+            peopleViewModel.toggleFavorite(personName: person.name)
+        }) {
+            Image(systemName: peopleViewModel.favorites.contains(person.name) ? "star.fill" : "star")
+        })
     }
 }
-
-

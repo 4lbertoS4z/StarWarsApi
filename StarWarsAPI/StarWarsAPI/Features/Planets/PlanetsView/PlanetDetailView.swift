@@ -34,8 +34,4 @@ struct PlanetDetailView: View {
     }
 }
 
-// Necesitarás proveer una URL válida de un planeta para el preview
-// Por ejemplo:
-// PlanetDetailView(planetUrl: "https://swapi.dev/api/planets/1/")
-
 
